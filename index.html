@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+    <h1>Inverter Sequência</h1>
+    <h2>Informe seu nome</h2>
+    <input type="text" id="nome">
+    <button onclick="inverterNome()" style="background-color: green; text-align: center;" >Inverter</button>
+        <div id="resultado"></div>
+</div>
+<script>
+    
+    function inverterNome(){
+        let caracteres = document.getElementById('nome').value;
+    var reverso = caracteres.split('').reverse('').join('');
+    document.getElementById('resultado').textContent = reverso;
+    }   
+</script>
+</body>
+</html>
